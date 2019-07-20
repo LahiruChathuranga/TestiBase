@@ -11,10 +11,10 @@ Pod::Spec.new do |spec|
   spec.swift_version = '4.0'
   spec.source       = { :git => "https://github.com/LahiruChathuranga/TestiBase.git", :tag => "0.0.2" }
   spec.source_files  = "iBase/Helper/*.*"
-  spec.frameworks = "UIKit", "iBaseSwagger", "Alamofire"
+  spec.frameworks = "iBaseSwagger"
   spec.resources = "iBase/*.*"
   spec. static_framework = true
   spec.dependency 'iBaseSwagger', '~> 1.0.0'
-  spec.dependency 'Alamofire'
+  
   
 end
