@@ -8,6 +8,7 @@
 
 import Foundation
 import iBaseSwagger
+import SwiftyJSON
 
 public class LoginModule: ValidatorDelegate {
     
