@@ -89,7 +89,7 @@ public class LoginModule: ValidatorDelegate {
                     }
                 }
             } else {
-                guard let responseJson: User = response?.payload else {return}
+//                guard let responseJson: User = response?.payload else {return}
                 SwaggerClientAPI.customHeaders.updateValue(responseJson.accessToken ?? "", forKey: "x-access-token")
                 completion(true, 200, response?.message ?? "success")
             }
