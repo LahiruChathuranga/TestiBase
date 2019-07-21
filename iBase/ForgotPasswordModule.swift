@@ -22,7 +22,7 @@ public class ForgotPasswordModule: ValidatorDelegate {
     public func ForgotPasswordRequest(completion: @escaping completionHandler) {
         validateAndRetrievePassword { (success, message) in
             if success {
-                forgotPasswordNetworkRequest(completion: { (success, statusCode, message) in
+                forgotPasswordNetworkRequest(complation: { (success, statusCode, message) in
                     if success {
                         completion(true, statusCode, message)
                     } else {
@@ -52,12 +52,12 @@ public class ForgotPasswordModule: ValidatorDelegate {
     func validateAndRetrievePassword(completion: actionHandler) {
         do {
             if try validateRetrievePassword() {
-                completion(true, .Success)
+                completion(true, "Success")
             }
         } catch ValidateError.invalidData(let message) {
             completion(false, message)
         } catch {
-            completion(false, .MisingData)
+            completion(false, "MisingData")
         }
     }
 
@@ -65,7 +65,7 @@ public class ForgotPasswordModule: ValidatorDelegate {
     //Proceed with backend
     func forgotPasswordNetworkRequest(complation: @escaping completionHandler) {
         guard Reachability.isInternetAvailable() else {
-            complation(false, 503, .InternetConnectionOffline)
+            complation(false, 503, "InternetConnectionOffline")
             return
         }
         ForgotPasswordAPI.passwordEmailPost(email: email) { (response, error) in
