@@ -76,7 +76,7 @@ public class LoginModule: ValidatorDelegate {
             completion(false, 503, "InternetConnectionOffline")
             return
         }
-        AuthAPI.loginPost(deviceId: ApplicationManager.shared.deviceId, deviceType: ApplicationManager.shared.deviceType, email: email.value, password: password.value) { (response, error) in
+        AuthAPI.loginPost(deviceId: ApplicationManager.shared.deviceId, deviceType: ApplicationManager.shared.deviceType, email: email, password: password) { (response, error) in
             
             if error != nil {
                 if let errorResponse = error as? ErrorResponse {
