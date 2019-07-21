@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841D73F122E4429800D5A325 /* Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D73ED22E4429800D5A325 /* Handlers.swift */; };
+		841D73F222E4429800D5A325 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D73EE22E4429800D5A325 /* NetworkReachability.swift */; };
+		841D73F322E4429800D5A325 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D73EF22E4429800D5A325 /* AppManager.swift */; };
+		841D73F422E4429800D5A325 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D73F022E4429800D5A325 /* Validator.swift */; };
 		84AEEA4622BBE0060097B0E4 /* iBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 84AEEA4422BBE0060097B0E4 /* iBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84AEEA4D22BBE0280097B0E4 /* LoginModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEEA4C22BBE0280097B0E4 /* LoginModule.swift */; };
-		84AEEA5022BBE0BC0097B0E4 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEEA4F22BBE0BC0097B0E4 /* Validator.swift */; };
-		84AEEA5222BBE1630097B0E4 /* Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEEA5122BBE1630097B0E4 /* Handlers.swift */; };
-		84AEEA5622BBE35A0097B0E4 /* NetworkReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEEA5522BBE35A0097B0E4 /* NetworkReachability.swift */; };
-		84AEEA9522BBE63A0097B0E4 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEEA9422BBE63A0097B0E4 /* AppManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		841D73ED22E4429800D5A325 /* Handlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Handlers.swift; sourceTree = "<group>"; };
+		841D73EE22E4429800D5A325 /* NetworkReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
+		841D73EF22E4429800D5A325 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		841D73F022E4429800D5A325 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		84AEEA4122BBE0060097B0E4 /* iBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AEEA4422BBE0060097B0E4 /* iBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iBase.h; sourceTree = "<group>"; };
 		84AEEA4522BBE0060097B0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84AEEA4C22BBE0280097B0E4 /* LoginModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModule.swift; sourceTree = "<group>"; };
-		84AEEA4F22BBE0BC0097B0E4 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
-		84AEEA5122BBE1630097B0E4 /* Handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handlers.swift; sourceTree = "<group>"; };
-		84AEEA5522BBE35A0097B0E4 /* NetworkReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachability.swift; sourceTree = "<group>"; };
-		84AEEA9422BBE63A0097B0E4 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,23 +56,15 @@
 		84AEEA4322BBE0060097B0E4 /* iBase */ = {
 			isa = PBXGroup;
 			children = (
-				84AEEA4E22BBE0A40097B0E4 /* Helper */,
+				841D73EF22E4429800D5A325 /* AppManager.swift */,
+				841D73ED22E4429800D5A325 /* Handlers.swift */,
+				841D73EE22E4429800D5A325 /* NetworkReachability.swift */,
+				841D73F022E4429800D5A325 /* Validator.swift */,
 				84AEEA4422BBE0060097B0E4 /* iBase.h */,
 				84AEEA4522BBE0060097B0E4 /* Info.plist */,
 				84AEEA4C22BBE0280097B0E4 /* LoginModule.swift */,
 			);
 			path = iBase;
-			sourceTree = "<group>";
-		};
-		84AEEA4E22BBE0A40097B0E4 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				84AEEA4F22BBE0BC0097B0E4 /* Validator.swift */,
-				84AEEA5122BBE1630097B0E4 /* Handlers.swift */,
-				84AEEA5522BBE35A0097B0E4 /* NetworkReachability.swift */,
-				84AEEA9422BBE63A0097B0E4 /* AppManager.swift */,
-			);
-			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,11 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84AEEA5022BBE0BC0097B0E4 /* Validator.swift in Sources */,
+				841D73F122E4429800D5A325 /* Handlers.swift in Sources */,
 				84AEEA4D22BBE0280097B0E4 /* LoginModule.swift in Sources */,
-				84AEEA5222BBE1630097B0E4 /* Handlers.swift in Sources */,
-				84AEEA5622BBE35A0097B0E4 /* NetworkReachability.swift in Sources */,
-				84AEEA9522BBE63A0097B0E4 /* AppManager.swift in Sources */,
+				841D73F422E4429800D5A325 /* Validator.swift in Sources */,
+				841D73F222E4429800D5A325 /* NetworkReachability.swift in Sources */,
+				841D73F322E4429800D5A325 /* AppManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
