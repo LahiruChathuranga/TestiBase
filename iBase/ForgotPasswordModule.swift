@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import iBaseSwagger
+import SwiftyJSON
 
 public class ForgotPasswordModule: ValidatorDelegate {
      var email: String = ""
